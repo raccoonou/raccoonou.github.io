@@ -1,0 +1,55 @@
+:root {
+    --black: #181818;
+    --white: #f9f9f9;
+    --blue: #b3b6f5;
+    --green: #71eb7d;
+    --yellow: #eaef55;
+}
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background: var(--black);
+    color: var(--white);
+}
+
+div {
+    width: calc(100%);
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div a {
+    height: fit-content;
+    width: fit-content;
+    margin: 8px 0px;
+    padding: 2px 8px;
+    font-size: 4rem;
+    font-weight: 600;
+    text-decoration: 2.5px solid underline var(--green);
+    color: var(--blue);
+}
+
+div a:hover {
+    text-decoration: 2.5px solid underline var(--black);
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+div a:active {
+    background-color: var(--green);
+}
+
+@media (max-width: 600px) {
+    div a {
+        font-size: 18px;
+    }
+}
