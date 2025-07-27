@@ -9,11 +9,11 @@
 * {
     margin: 0px 0px;
     padding: 0px 0px;
-    font-family: "Roboto Mono", monospace;
+    font-family: monospace;
 }
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: monospace;
     background: var(--black);
     color: var(--white);
 }
@@ -32,14 +32,14 @@ div a {
     width: fit-content;
     margin: 8px 0px;
     padding: 2px 8px;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 600;
-    text-decoration: 2.5px solid underline var(--green);
+    text-decoration: 8px solid underline var(--green);
     color: var(--blue);
 }
 
 div a:hover {
-    text-decoration: 2.5px solid underline var(--black);
+    text-decoration: 8px solid underline var(--black);
     background-color: var(--yellow);
     color: var(--black);
 }
@@ -51,5 +51,6 @@ div a:active {
 @media (max-width: 600px) {
     div a {
         font-size: 18px;
+        text-decoration: 2.5px solid underline var(--green);
     }
 }
